@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agende seu exame de vista na VerClinic com atendimento humanizado e tecnologia de ponta.">
+  <meta name="keywords" content="exame de vista, clínica oftalmológica, saúde ocular, VerClinic">
+  <meta name="author" content="VerClinic">
+  <title>VerClinic | Sua Visão em Boas Mãos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fb;
+      color: #2c3e50;
+    }
+    header {
+      background-color: #0057b7;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      height: 40px;
+    }
+    section.hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #e0f2ff, #f0f9ff);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      background-color: #0057b7;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #003f8a;
+    }
+    section.features {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .feature {
+      max-width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #0057b7;
+    }
+    footer {
+      background-color: #ecf0f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .form-section {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .form-section form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .form-section input, .form-section button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-section button {
+      background-color: #0057b7;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .whatsapp-button img {
+      margin-right: 10px;
+      height: 20px;
+    }
+  </style>
+  <!-- Google Ads Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-CONVERSION_ID');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="/logo-verclinic.svg" alt="Logo VerClinic">
+  </header>
+
+  <section class="hero">
+    <h1>Cuide da Sua Visão com Quem Entende</h1>
+    <p>Agende seu exame de vista com atendimento humanizado e tecnologia de ponta.</p>
+    <a href="#form"><button class="cta-button">Agendar Agora</button></a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Exames Precisos</h3>
+      <p>Equipamentos modernos e profissionais experientes para diagnósticos seguros.</p>
+    </div>
+    <div class="feature">
+      <h3>Atendimento Humanizado</h3>
+      <p>Cuidamos da sua visão com respeito, paciência e atenção.</p>
+    </div>
+    <div class="feature">
+      <h3>Localização Fácil</h3>
+      <p>Estamos perto de você, com acesso fácil e horários flexíveis.</p>
+    </div>
+  </section>
+
+  <section id="form" class="form-section">
+    <h2>Agende Seu Exame</h2>
+    <form onsubmit="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/label'}); return true;">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="tel" name="telefone" placeholder="Telefone/WhatsApp" required>
+      <input type="email" name="email" placeholder="Seu e-mail">
+      <button type="submit">Confirmar Agendamento</button>
+    </form>
+  </section>
+
+  <a class="whatsapp-button" href="https://wa.me/5511999999999" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    Fale conosco</a>
+
+  <footer>
+    &copy; 2025 VerClinic. Todos os direitos reservados. <br>
+    <a href="https://verclinic.com.br">verclinic.com.br</a>
+  </footer>
+</body>
+</html>
